@@ -1,0 +1,68 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<context:component-scan base-package="com.otsuka.loe" />
+	<!-- Database Configuration -->
+	<import resource="DataSource.xml" />
+	<import resource="Hibernate.xml" />
+
+	<mvc:annotation-driven />
+
+	<!-- <mvc:annotation-driven
+		content-negotiation-manager="contentManager" />
+	<bean id="contentManager"
+		class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+		<property name="favorPathExtension" value="true" />
+		<property name="ignoreAcceptHeader" value="true" />
+		<property name="defaultContentType" value="text/html" />
+		<property name="useJaf" value="false" />
+		<property name="mediaTypes">
+			<map>
+				<entry key="html" value="text/html" />
+				<entry key="json" value="application/json" />
+				<entry key="xml" value="application/xml" />
+			</map>
+		</property>
+	</bean> -->
+
+
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="587" />
+		<property name="username" value="indiaotsuka@gmail.com" />
+		<property name="password" value="Saturday@123" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/views/jsp/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<!-- <bean id="fileValidator" class="org.otsuka.beehive.util.FileValidator" 
+		/> -->
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
+	<!-- <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"> 
+		<property name="exceptionMappings"> <props> <prop key="java.lang.Exception">Error</prop> 
+		</props> </property> </bean> -->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+</beans>

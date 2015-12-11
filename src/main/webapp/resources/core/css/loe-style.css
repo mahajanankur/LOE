@@ -1,0 +1,125 @@
+/* Reset */  
+ h1, h2, h3, h4, h5, h6, img, ul, li, table, p, hr { border:0px; margin:0px; padding:0px; font-weight:400;}
+
+/* Basic Elements */  
+html,body{ color:#2F2F2F; font-family: 'Open Sans', Segoe UI, Verdana; font-size:13px; height:100%; margin:0px; padding:0px;}
+input, textarea, keygen, select, button { font-family: 'Open Sans', Segoe UI, Verdana; font-size:13px; }
+a { text-decoration:none; }
+h3 { font-size:17px; }
+
+/* .................. Style for Scrollbar ................... */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track-piece { background-color: #DFE0E1; }
+::-webkit-scrollbar-thumb { background-color: #C4C4C5; border: 1px solid #A5A6A6; }
+
+/* .................. Common Style for all pages ................... */
+.dir-left { float:left; }
+.dir-right { float:right; }
+.clear { clear:both; }
+.pos-abs { position:absolute;}
+.pos-rel { position:relative;}
+.text-center { text-align:center; }
+.white-txt { color: #F9F9F9; }
+.blue-txt { color:#0F7ABE; }
+.semibold-txt { font-weight:600;}
+.ele-hide { display:none; }
+.ele-margin { margin:10px; }
+.ele-margin-left { margin-left:10px; }
+.ele-margin-right { margin-right:10px; }
+.ele-margin-top { margin-top:10px; }
+.ele-margin-bottom { margin-bottom:10px; }
+.ele-margin-bottom-big { margin-bottom:20px; }
+.ele-padding { padding:10px; }
+.ele-padding-big { padding:20px; }
+.ele-padding-sml { padding:5px 10px; }
+.ele-bdr { border: 1px solid #D0D0D0; }
+.ele-bdr-bottom { border-bottom:1px solid #9A9A9A; }
+.ele-bdr-rad { border-radius:3px; }
+.ele-shadow { box-shadow: 1px 3px 10px #C6C6C6; }
+.ele-click { cursor:pointer; }
+.ele-btn { background-color: #0F7ABE; border:0px; border-radius:3px; line-height:28px; min-width:80px; }
+.err-btn { background-color: red; border:0px; border-radius:3px; line-height:28px; min-width:80px; }
+.ele-btn:hover { -webkit-box-shadow: 3px 3px 6px 0px rgba(112,112,112,1); -moz-box-shadow: 3px 3px 6px 0px rgba(112,112,112,1); box-shadow: 3px 3px 6px 0px rgba(112,112,112,1);}
+.ele-textbox { border:0px; border-bottom:1px solid #9A9A9A; background-color:transparent; width:59%; padding:2px 0px; font-family: 'Open Sans', Segoe UI, Verdana;}
+.ele-textarea { width: 57.5%; height:80px; margin-top: 10px; resize:none; overflow-y:auto; font-family: 'Open Sans', Segoe UI, Verdana;}
+textarea:focus, input:focus, select:focus { border-bottom:1px solid #0F7ABE; outline:none; }
+.form-label { text-align:right; width:30%; margin-right:3%; margin-top:2px; }
+.pagecontainer { margin:8px 3% ; }
+.page-hdr { font-weight:300; font-size:28px;}
+.ele-hdr { border-bottom: 1px solid #D4D4D4; line-height: 26px; }
+.ele-help { background:url(../images/help-icn.png) no-repeat center center; height:22px; width:22px; margin-left:5px; cursor: help; }
+.full-width { width:100%; }
+
+/* .................. Style for login page ................... */
+.login-bg { background: rgba(155,198,233,1);
+            background: -moz-linear-gradient(top, rgba(155,198,233,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(11,120,188,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(155,198,233,1)), color-stop(50%, rgba(113,206,239,1)), color-stop(51%, rgba(33,180,226,1)), color-stop(100%, rgba(11,120,188,1)));
+            background: -webkit-linear-gradient(top, rgba(155,198,233,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(11,120,188,1) 100%);
+            background: -o-linear-gradient(top, rgba(155,198,233,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(11,120,188,1) 100%);
+            background: -ms-linear-gradient(top, rgba(155,198,233,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(11,120,188,1) 100%);
+            background: linear-gradient(to bottom, rgba(155,198,233,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(11,120,188,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc6e9', endColorstr='#0b78bc', GradientType=0 ); }
+.login-box { width:25%; min-width:260px; border-radius:6px; background-color:#ffffff;
+             -webkit-box-shadow:2px 2px 10px 1px rgba(25,78,143,1); -moz-box-shadow:2px 2px 10px 1px rgba(25,78,143,1); box-shadow:2px 2px 10px 1px rgba(25,78,143,1); }
+.login-btn { margin-top:10px; border-radius:20px; line-height:36px; text-shadow:#000000 1px 1px 0px; font-size:16px;}
+
+/* .................. Style for Page containers ................... */
+/* .container { min-height: 95%; } */
+.content { min-height:500px;  background-color:#F5F5F5; }	
+.footer { bottom: 0px; height:30px; background-color:#DCDCDC; box-shadow:0px 1px 6px #8E8E8E inset; }
+.footer div { margin: 7px 3% 0px 3%; }
+
+/* .................. Style for Page Header ................... */
+.hdr-row { height:50px; padding:3px 3%; border-bottom: 1px solid #A7A7A7; background-color:#E2E2E2; background: -webkit-linear-gradient(#F9F9F9, #E2E2E2, #C1C1C1);
+           background: -o-linear-gradient(#F9F9F9, #E2E2E2, #C1C1C1); background: -moz-linear-gradient(#F9F9F9, #E2E2E2, #C1C1C1);}
+.hdr-row-icn { margin-top:14px; width:26px; height:26px; }
+.home-icn { background: url(../images/home-icn.png) no-repeat center center; margin-right:0px; padding-right:30px; border:0; border-right:1px solid #989898; }
+.home-icn:hover { background: url(../images/home-icn-hover.png) no-repeat center center; }
+
+.myrepot-icn { background: url(../images/myrepots.png) no-repeat center center;  border:0; padding-right:30px; margin-right:20px; border-right:1px solid #989898; }
+.myrepot-icn:hover { background: url(../images/myrepots-hover.png) no-repeat center center; }
+.logout-icn { background: url(../images/logout-icn.png) no-repeat center center;  border:0; }
+.logout-icn:hover { background: url(../images/logout-icn-hover.png) no-repeat center center; }
+
+/* .................. Style for Page Content ................... */
+.left-block { width:35%; min-width:355px; margin-right:3%; }
+.right-block { width:62%; }
+.reset-icn { background:#0F7ABE url(../images/reset-icn.png) no-repeat center center; min-width: 50px; }
+.verify-icn { background:#0F7ABE url(../images/verify-icn.png) no-repeat center center; min-width: 50px; }
+.datepicker-icn { background:url(../images/datepicker-icn.png) no-repeat center right; }
+.drug-img { background-color:#E8E8E8; width:58%; margin-left:33%; margin-top:5px; }
+.drug-img img { height:70px; margin:5px;}
+.user-management-btn{ width:22%; min-width:150px; }
+.user-management-btn .ele-btn { font-size:15px; line-height:56px; }
+.user-activebtn { background-color:#40A7E8; }
+.user-management-form { width:50%; margin:0px auto; padding-bottom:20px; border-top:6px solid #0F7ABE; background-color:#F5F5F5; }
+.report-icns { height:26px; width:60px; border-left: 1px solid #989898; }
+.email-icn { background:url(../images/email-icn.png) no-repeat center center; }
+.email-icn:hover { background:url(../images/email-icn-hover.png) no-repeat center center; }
+.download-icn { background:url(../images/download-icn.png) no-repeat center center; }
+.download-icn:hover { background:url(../images/download-icn-hover.png) no-repeat center center; }
+.print-icn { background:url(../images/print-icn.png) no-repeat center center; }
+.print-icn:hover { background:url(../images/print-icn-hover.png) no-repeat center center; }
+
+/* .................. Override jruery and slickgrid default style ................... */
+.ui-widget { font-family: 'Open Sans', Segoe UI, Verdana; font-size:13px; }
+.slick-header-column.ui-state-default { background: #0F7ABE; }
+
+.comp_btn{text-align: center;
+    margin-left: 33%;
+    margin-bottom: 10px;
+    width: 100px;}
+    
+    .cell-description{position: absolute;
+  border: 1px solid transparent;
+  border-right: 1px dotted silver;
+  border-bottom-color: silver;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  z-index: 1;
+  padding: 1px 2px 2px 1px;
+  margin: 0;
+  /*white-space: nowrap;*/
+  cursor: default;}
